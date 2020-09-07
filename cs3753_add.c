@@ -11,7 +11,7 @@ asmlinkage long sys_cs3753_add(int a, int b, int *dest)
     // add those two numbers 
     sum = a + b;
     // store the result
-    put_user(sum, *dest);
+    put_user(sum, dest);
     // use printk() to log the result
     printk("Sum: %d", sum);
     // return an appropriate return value
