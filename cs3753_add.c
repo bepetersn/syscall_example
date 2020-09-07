@@ -3,7 +3,7 @@
 #include <linux/linkage.h> 
 #include <include/asm/uaccess.h>
 
-asmlinkage long cs3753_add(int a, int b, int *dest)
+asmlinkage long sys_cs3753_add(int a, int b, int *dest)
 {
     // use printk() to log the numbers to be added
     printk("Going to add %d and %d", a, b);
