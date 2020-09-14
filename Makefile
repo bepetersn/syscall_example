@@ -137,7 +137,12 @@ obj-$(CONFIG_UNWINDER_ORC)		+= unwind_orc.o
 obj-$(CONFIG_UNWINDER_FRAME_POINTER)	+= unwind_frame.o
 obj-$(CONFIG_UNWINDER_GUESS)		+= unwind_guess.o
 
-# added by bp
+# Added by bp;
+# Tell the `kbuild` system to find
+# a cs3753_add.c file, build it,
+# and include its object ifle as a 
+# built-in with kernel, as opposed 
+# to as a module
 obj-y                                   += cs3753_add.o                                  
 
 ###

@@ -1,0 +1,20 @@
+[   20.906945] snd_hda_codec_generic hdaudioC0D0:      Line=0x5
+[   22.018090] Adding 4194300k swap on /dev/mapper/ubuntu--vg-swap.  Priority:-2 extents:1 across:4194300k FS
+[   22.126001] EXT4-fs (vda2): mounting ext2 file system using the ext4 subsystem
+[   22.193506] EXT4-fs (vda2): mounted filesystem without journal. Opts: (null)
+[   23.113631] audit: type=1400 audit(1600091492.008:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=713 comm="apparmor_parser"
+[   23.113635] audit: type=1400 audit(1600091492.008:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=713 comm="apparmor_parser"
+[   23.113638] audit: type=1400 audit(1600091492.008:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=713 comm="apparmor_parser"
+[   23.113641] audit: type=1400 audit(1600091492.008:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=713 comm="apparmor_parser"
+[   23.127002] audit: type=1400 audit(1600091492.020:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=712 comm="apparmor_parser"
+[   23.127011] audit: type=1400 audit(1600091492.020:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=712 comm="apparmor_parser"
+[   23.175715] audit: type=1400 audit(1600091492.068:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=717 comm="apparmor_parser"
+[   23.175720] audit: type=1400 audit(1600091492.068:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=717 comm="apparmor_parser"
+[   23.175723] audit: type=1400 audit(1600091492.068:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=717 comm="apparmor_parser"
+[   23.175725] audit: type=1400 audit(1600091492.068:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=717 comm="apparmor_parser"
+[   26.429866] IPv6: ADDRCONF(NETDEV_UP): ens3: link is not ready
+[   39.963177] input: spice vdagent tablet as /devices/virtual/input/input5
+[   67.809160] random: crng init done
+[   67.809174] random: 7 urandom warning(s) missed due to ratelimiting
+[ 1227.379454] Going to add 4 and 5
+[ 1227.379456] Sum: 9
