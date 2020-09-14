@@ -1,10 +1,14 @@
 
+/* Be sure to call the built version of this
+   file with two small-ish integer arguments,
+   or the behavior is undefined. Thanks, sorry! */
+
 #include <unistd.h>
 // This ^ gives access to syscall()
 #include <stdio.h>
-// ^ For printf
+// ^ For printf()
 #include <stdlib.h>
-// ^ For atoi
+// ^ For atoi()
 
 const int CS3753_ADD = 548;
 

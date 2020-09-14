@@ -28,13 +28,12 @@ Additionally, these files are included for clarity of exposition:
 
 #### cs3753_add.c
 
-This is the source file for the "cs3753_add" syscall which I added to the kernel. From the root of the linux source directory, it needs to be placed in the arch/<your architecture>/kernel/ directory (I used "x86" arch -- writing it that way from here on). This will be built into an object file (.o) and then included
+This is the source file for the "cs3753_add" syscall which I added to the kernel. From the root of the linux source directory (linux root), it needs to be placed in the arch/<your architecture>/kernel/ directory (I used "x86" arch -- writing it that way from here on). This will be built into an object file (.o) and then included
 with the kernel.
 
 #### Makefile
 
-I modified this file, also present from the root of the linux source directory, at the arch/x86/kernel directory. This is the Makefile for the kernel, used for making it easier to compile all its C programs with the GCC via something like `make && make module_installs && make install`. Makefiles consist of a set of targets and intelligently determine how to build or re-build files based on their extension. This is extended by the `kbuild` system with the concept of "goal definitions", beginning with "obj-y" or "obj-m" (or variables to be substituted in
-with "y" or "m"). 
+I modified this file, also present from <linux root>/arch/x86/kernel directory. This is the Makefile for the kernel, used for making it easier to compile all its C programs with the GCC via something like `make && make module_installs && make install`. Makefiles consist of a set of targets and intelligently determine how to build or re-build files based on their extension. This is extended by the `kbuild` system with the concept of "goal definitions", beginning with "obj-y" or "obj-m" (or variables to be substituted in with "y" or "m"). 
 
 I added a line, `obj-y += cs3753_add.o` to tell the Makefile
 to build and include the cs3753.o file as a built-in with the kernel.
@@ -53,12 +52,23 @@ I added a function prototype for sys_cs3753_add here.
 
 #### dmesg_tail_20.txt
 
-You can see the text output of my running `dmesg | tail -n 20 > dmesg_tail_20.txt` here, right after running my `./test` program. 
+You can see the text output of my running `dmesg | tail -n 20 > dmesg_tail_20.txt` here, right after running my `./my_sum` program. 
 
-#### test.c / test
+#### my_sum.c / my_sum
 
 This is the source code / executable file I created to show the functionality of the sys_cs3753_add system call. Instructions below for building and running.
 
-### Building and runnning the test program
+To build it, just call:
+ 
+    make my_sum
+
+To run it, you can call it like so:
+
+    ./my_sum 6 7
+
+Where two arguments follow the executable. Two integers will be added and the result displayed, as well as logged to /var/log/syslog. There's several undefined behaviors around this script, so be careful to always call it with two small-ish integers.
 
 
+#### 
+
+Just a license for this code because it is hosted on GitHub.
